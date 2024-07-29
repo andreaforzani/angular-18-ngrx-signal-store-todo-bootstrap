@@ -1,0 +1,14 @@
+<div class="app">
+  <h1>Automoto Diary</h1>
+
+  @if (!store.loading()) {
+    <todos-list />
+  }
+  @else {
+    <!-- <button nbButton status="success" (click)="showSpinner()">
+      Start Spinner
+    </button> -->
+    <ngx-spinner bdColor="rgba(0, 0, 0, 0.8)" size="large" sizecolor="#fff" type= "ball-zig-zag-deflect" [fullScreen]="true"></ngx-spinner>
+  }
+
+</div>

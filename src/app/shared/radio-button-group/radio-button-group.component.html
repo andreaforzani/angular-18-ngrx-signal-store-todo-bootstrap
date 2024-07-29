@@ -1,0 +1,12 @@
+<div class="btn-group w-100" role="group">
+  <input type="radio" class="btn-check" name="btnFilterRadio" id="btnFilterRadio1" autocomplete="off" value="all" (change)="onRadioChange($event)" checked>
+  <label class="btn btn-outline-primary" for="btnFilterRadio1">All</label>
+
+  <input type="radio" class="btn-check" name="btnFilterRadio" id="btnFilterRadio2" autocomplete="off" value="pending"
+    (change)="onRadioChange($event)">
+  <label class="btn btn-outline-primary" for="btnFilterRadio2">Pending</label>
+
+  <input type="radio" class="btn-check" name="btnFilterRadio" id="btnFilterRadio3" autocomplete="off"
+    value="completed" (change)="onRadioChange($event)">
+  <label class="btn btn-outline-primary" for="btnFilterRadio3">Completed</label>
+</div>
